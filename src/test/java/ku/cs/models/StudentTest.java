@@ -39,6 +39,8 @@ class StudentTest {
 
     @Test
     void testChangeName(){
-        assertEquals("winwin", s1.changeName("winwin"));
+        s1.changeName("winwin");
+        assertEquals("winwin", s1.getName());
     }
+
 }
