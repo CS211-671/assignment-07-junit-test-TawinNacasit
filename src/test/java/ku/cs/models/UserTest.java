@@ -34,6 +34,7 @@ class UserTest {
     @Test
     public void testSetPassword(){
         User user = new User("user01", "plain-p@ssw0rd");
-        boolean actual = user.isUsername("user01");//ยังไม่เสร็จ
+        user.setPassword("9999");
+        assertTrue(user.validatePassword("9999"));
     }
 }

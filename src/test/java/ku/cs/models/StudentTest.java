@@ -11,7 +11,7 @@ class StudentTest {
     @BeforeEach
     void init()
     {
-        s1 = new Student("6xxxxxxxxx", "winner");
+        s1 = new Student("6xxxxxxxxx", "winner",0);
     }
 
 
@@ -27,8 +27,9 @@ class StudentTest {
 
     @Test
     void testCalculateGrade(){
-        Student s1 = new Student("6xxxxxxxxx", "winner", 50);
-        s1.addScore(10);
+//        Student s1 = new Student("6xxxxxxxxx", "winner", 50);
+        s1.addScore(60);
+
         assertEquals("C", s1.grade());
     }
 
